@@ -44,6 +44,13 @@ python3 sync_mtr_stations.py
 - Chinese query → `TC`
 - English/non-Chinese query → `EN`
 
+## Features
+- **Real-time ETA**: Live MTR train arrival times from DATA.GOV.HK
+- **Fuzzy Matching**: Smart station name matching (e.g., "旺角" matches "Mong Kok")
+- **Bilingual Output**: Traditional Chinese and English support
+- **Token Efficient**: Local CSV cache minimizes API calls and token usage
+- **Multi-line**: Supports all 10 MTR lines including Airport Express
+
 ## Usage
 - Station + line: query that combo directly.
 - Station only: query all lines serving that station.

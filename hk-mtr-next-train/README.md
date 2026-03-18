@@ -1,4 +1,4 @@
-# Hong Kong MTR Next-Train - Technical Reference
+# Hong Kong MTR Next-Train ETA - Technical Reference
 
 > ⚠️ **For complete documentation, please refer to the [main README.md](https://github.com/tomfong/hk-mtr-next-train-skill/blob/master/README.md)**
 > 
@@ -14,7 +14,7 @@
 
 **Skill Name:** `hk-mtr-next-train`  
 **Version:** 1.0.0  
-**Last Updated:** 2026-03-18 
+**Last Updated:** 2026-03-18  
 **Compatibility:** OpenClaw and compatible AI agents
 
 ### Core Components

@@ -1,4 +1,4 @@
-# Hong Kong MTR Next-Train Skill for AI Agents | 港鐵實時到站預報
+# Hong Kong MTR Next-Train ETA Skill for AI Agents | 港鐵實時到站預報
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
@@ -12,13 +12,16 @@ Author: [Tom FONG](https://github.com/tomfong) (with Usagi - Tom's OpenClaw Agen
 
 ## Overview
 
-A skill package for **OpenClaw** and compatible AI agents that provides **real-time MTR arrival predictions** in **Hong Kong**. This tool enables AI assistants to query MTR next-train ETA (estimated time of arrival) data with fuzzy station matching and bilingual output (zh-HK/en).
+A skill package for **OpenClaw** and compatible AI agents that provides **real-time arrival times for all of the MTR lines** in **Hong Kong**, with fuzzy station matching and bilingual output (zh-HK/en).
 
-**Key Features:**
-- **Real-time Hong Kong MTR ETA** - Get accurate arrival times for MTR trains
-- **Multi-line support** - Island Line, Tsuen Wan Line, Kwun Tong Line, Tseung Kwan O Line, South Island Line, Tung Chung Line, East Rail Line, Tuen Ma Line, Disneyland Resort Line, and the Airport Express
-- **Token & Resources Friendly** - 
-- **Bilingual interface** - Supports both Traditional Chinese and English queries
+
+| Feature | Description |
+| ------- | ----------- |
+| 🚈 Real-time ETA | Live MTR train arrival times from DATA.GOV.HK |
+| 🚇 Multi-line | Supports all 10 MTR lines including Airport Express |
+| 🎯 Fuzzy Matching | Smart station name matching (e.g., "旺角" matches "Mong Kok") |
+| ⚡ Token & Resources Friendly | Lightweight local CSV caching minimizes API calls; concise, data-first output optimized for AI context windows |
+| 🌐 Bilingual Output | Traditional Chinese and English support |
 
 ## Installation
 
@@ -34,7 +37,7 @@ clawhub install hk-mtr-next-train
 clawhub install https://github.com/tomfong/hk-mtr-next-train-skill --path hk-mtr-next-train --as hk-mtr-next-train
 ```
 
-### ⚡ **First-Time Setup (Recommended) **
+### ⚡ **First-Time Setup (Recommended)**
 
 **You are recommended to run the following command once before first use:**
 
@@ -53,10 +56,9 @@ python3 ~/.openclaw/workspace/skills/hk-mtr-next-train/scripts/sync_mtr_stations
 - Builds local CSV file (mtr_lines_and_stations.csv) for fast queries
 
 **Why is this needed?**
-- Provides **offline bus stop lookup** capability
+- Provides **offline station lookup** capability
 - Enables **fuzzy location matching** without API calls
 - **Speeds up subsequent queries** significantly
-- Supports **smart area name search** (e.g., "尚德", "寶琳站")
 
 > `{skill_dir}` = skill installation directory, e.g. `~/.openclaw/workspace/skills/hk-mtr-next-train`
 
@@ -81,12 +83,6 @@ This skill is optimized for **natural language queries** with **fuzzy matching**
 **Search by:**
 - **Station Names**: "Central", "金鐘", "旺角"
 - **Line Name**: "港島線", "東鐵線", "Tuen Ma Line"
-
-## Features 
-
-| Feature                  | Description                                  |
-| ------------------------ | -------------------------------------------- |
-|    |           |     |
 
 ## Usage Examples
 
@@ -123,7 +119,12 @@ exec python3 {skill_dr}/hk-mtr-next-train/scripts/mtr_eta.py {STATION_NAME} {LIN
 資料來源：開放數據平台
 ```
 
-<img src="./docs/images/MTR_SKILL_EXAMPLE_01.PNG" width="350" alt="MTR ETA Example 1"> <img src="./docs/images/MTR_SKILL_EXAMPLE_02.PNG" width="350" alt="MTR ETA Example 2">
+<table>
+  <tr>
+    <td><img src="./docs/images/MTR_SKILL_EXAMPLE_01.PNG" width="350" alt="MTR ETA Example 1"></td>
+    <td><img src="./docs/images/MTR_SKILL_EXAMPLE_02.PNG" width="350" alt="MTR ETA Example 2"></td>
+  </tr>
+</table>
 
 ## Changelog
 
