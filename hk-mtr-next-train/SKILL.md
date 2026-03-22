@@ -5,7 +5,7 @@ metadata: {"openclaw":{"emoji":"🚈","requires":{"bins":["python3"]},"keywords"
 user-invocable: true
 ---
 
-# Hong Kong MTR Next Train (v1.0.0)
+# Hong Kong MTR Next Train (v1.0.1)
 
 ## Post-Install Recommendation
 
@@ -112,6 +112,9 @@ If no result after matching/retry:
 ---
 
 ## Changelog
+
+### 2026-03-22 · v1.0.1
+- Update docs
 
 ### 2026-03-18 · v1.0.0
 - First stable release

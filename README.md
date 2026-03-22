@@ -128,6 +128,9 @@ exec python3 {skill_dr}/hk-mtr-next-train/scripts/mtr_eta.py {STATION_NAME} {LIN
 
 ## Changelog
 
+### v1.0.1 (2026-03-22)
+- Update docs
+
 ### v1.0.0 (2026-03-18)
 - Initial release 
 

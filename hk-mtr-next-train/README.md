@@ -1,6 +1,6 @@
 # Hong Kong MTR Next-Train ETA - Technical Reference
 
-> ⚠️ **For complete documentation, please refer to the [main README.md](https://github.com/tomfong/hk-mtr-next-train-skill/blob/master/README.md)**
+> ⚠️ **For complete documentation, please refer to the [main README.md](https://github.com/tomfong/hk-mtr-next-train-skill)**
 > 
 > This file contains technical reference information for the Hong Kong MTR Next-Train skill.
 
@@ -13,8 +13,8 @@
 ## Technical Overview
 
 **Skill Name:** `hk-mtr-next-train`  
-**Version:** 1.0.0  
-**Last Updated:** 2026-03-18  
+**Version:** 1.0.1  
+**Last Updated:** 2026-03-22  
 **Compatibility:** OpenClaw and compatible AI agents
 
 ### Core Components
@@ -56,7 +56,7 @@ python3 sync_mtr_stations.py
 
 ---
 
-**For complete user documentation, examples, and installation guide, please see the [main README.md](https://github.com/tomfong/hk-mtr-next-train-skill/blob/master/README.md)**
+**For complete user documentation, examples, and installation guide, please see the [main README.md](https://github.com/tomfong/hk-mtr-next-train-skill/blob/main/README.md)**
 
 ## Author
 
